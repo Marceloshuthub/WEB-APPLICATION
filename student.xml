@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="my.css"?>
+<students>
+    <heading>student portal information</heading>
+    <students>
+        <name>name:anu</name>
+        <usn>usn:101</usn>
+        <place>place:blore</place>
+    </students>
+    <students>
+        <name>name:baby</name>
+        <usn>usn:102</usn>
+        <place>place:blore</place>
+    </students>
+    <students>
+        <name>name:bangaaru</name>
+        <usn>usn:101</usn>
+        <place>place:blore</place>
+    </students>
+</students>
