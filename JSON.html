@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STUDENT DATA</title>
+<script>
+function getDataFromTable()
+{
+var students=[
+{
+"id":"RVCEMCA20",
+"name":"mark",
+"college":"RVCE",
+"place":"bangalore"
+},
+{
+"id":"RVCEMCA21",
+"name":"martin",
+"college":"RVCE",
+"place":"bangalore"
+},
+{
+"id":"RVCEMCA22",
+"name":"anirudh",
+"college":"RVCE",
+"place":"bangalore"
+},
+{
+"id":"RVCEMCA23",
+"name":"john",
+"college":"RVCE",
+"place":"bangalore"
+},
+{
+"id":"RVCEMCA24",
+"name":"peter",
+"college":"RVCE",
+"place":"bangalore",
+},
+{
+"id":"RVCEMCA25",
+"name":"mathew",
+"college":"RVCE",
+"place":"bangalore"
+},
+{
+"id":"RVCEMCA26",
+"name":"merwin",
+"college":"RVCE",
+"place":"bangalore"
+},
+{
+"id":"RVCEMCA27",
+"name":"ram",
+"college":"RVCE",
+"place":"bangalore"
+},
+{
+"id":"RVCEMCA28",
+"name":"kiran",
+"college":"RVCE",
+"place":"bangalore"
+},
+{
+"id":"RVCEMCA29",
+"name":"harry",
+"college":"RVCE",
+"place":"bangalore"
+}
+]
+var tableBody='<table border="1"><tr><td>id</td><td>name</td><td>college</td><td>place</td></tr>'
+students.forEach(function(d)
+{
+tableBody +='<tr><td>'+d.id+'</td><td>'+d.name+'</td><td>'+d.college+'</td><td>'+d.place+'</td></tr>';});
+tableBody +='</table>';
+var divContainer = document.getElementById("showdata");
+divContainer.innerHTML=tableBody;
+}
+</script>
+</head>
+<body>
+<input type="button" value="GET DATA" onclick="getDataFromTable()">
+<p id="showdata"></p>
+</body>
+
+
+

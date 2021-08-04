@@ -1,0 +1,56 @@
+.logo
+{
+	margin-left: auto;
+	margin-right: auto;
+	height: 80px;
+	width: 80px;
+	display: block;
+	border-radius: 50%;
+}
+header
+{
+	background-color: lightblue;
+}
+a{
+	text-decoration: none;
+}
+h1
+{
+	text-align:center;
+}
+ul{
+	list-style-type:none;
+	height:50px;
+	background-color:yellow;
+}
+li
+{
+	float:left;
+	padding:16px 16px ;
+}
+li a:hover {
+	background-color:aqua;
+}
+footer
+{
+	background-color:#777;
+	text-align:center;
+	padding: 5px;
+	color:white;
+}
+article
+{
+	padding:60px;
+	width:auto;
+	background-color:aliceblue;
+	height:500px;
+	margin:left;
+}
+div.desc
+{
+	border:2px solid;
+	float:left;
+	height:250px;
+	width:170px;
+	padding:30px 50px;
+}

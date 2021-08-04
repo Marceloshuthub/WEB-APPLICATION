@@ -1,0 +1,70 @@
+<html>
+	<head>
+ 		 <title>Login page</title>
+ 		 <style>
+ 		 header{
+ 		 	text-align:center;
+ 		 	
+ 		 	}
+ 		 	form
+ 		 	{
+ 		 	text-align:center;
+ 		 	
+ 		 
+ 		 	}
+ 		 	div {
+			  border-radius: 5px;
+  		         background-color: #f2f2f2;
+  		         border:5px solid black;
+  			padding: 20px;
+  			margin-left:400px;
+ 		 	margin-right:400px;
+			}
+ 		 </style>
+	</head>
+	<body>
+	<header>
+		<img src="logo.png">
+		<h1>Simple Login Page</h1>
+		</header>
+
+		
+		<div>
+		<form> 
+			 <label>Username
+			 <input type="text" name="userid" id="userid"/></br></br></br></label>
+ 			 <label> Password
+ 			 <input type="password" name="pswrd"/></br></br></br></label>
+ 			<input type="button" onclick="check(this.form)" value="Login"/>
+			 <input type="reset" value="Reset"/>
+		</form>
+		</div>
+	 <script language="javascript">
+		 var ck_username = /^[A-Za-z]{10}$/;
+		
+		var ck_pwd = /^(?=.*\d)(?=.*[a-z])(?=.*[@#$%^&*])(?=.*[A-Z]).{8,}$/;
+   
+    
+
+ 		function check(form)
+ 			{
+				 var userid = form.userid.value;
+				 var pwd=form.pswrd.value;
+				 if (!ck_username.test(userid) || !ck_pwd.test(pwd)) 
+					{
+						alert("Incorrect User id/ pwd");
+ 					}
+ 				
+   				else
+  					{
+    				   alert("Welcome to RVCE");
+					   document.write(Date()+"   " +"Welcome"+userid);
+					    document.body.bgColor="blue";
+						
+    				}
+  			}
+			
+		
+   	</script>
+   	</body>
+</html>
